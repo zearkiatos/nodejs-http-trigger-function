@@ -10,7 +10,7 @@ This is an azure function ⚡️ built in nodejs 🟩 to execute an simple http 
 ## httpTriggerWithName
 
 ```sh
-$ curl --location --request GET 'https://nodejs-http-trigger-function.azurewebsites.net/api/az204-http-trigger?code=e1tZ44aoNaxlfcdM7V6bgJzUvU9mDXTn23wEVl6gdgiUAzFutZWuOA%3D%3D' \
+$ curl --location --request GET 'https://nodejs-http-trigger-function.azurewebsites.net/api/az204-http-trigger?code={CODE}' \
 --header 'Content-Type: application/json' \
 --data '{
     "name": "Pedro"
@@ -25,7 +25,7 @@ $ Hello, Pedro. This HTTP triggered function executed successfully.
 ## httpTriggerWithoutName
 
 ```sh
-$ curl --location 'https://nodejs-http-trigger-function.azurewebsites.net/api/az204-http-trigger?code=e1tZ44aoNaxlfcdM7V6bgJzUvU9mDXTn23wEVl6gdgiUAzFutZWuOA%3D%3D'
+$ curl --location 'https://nodejs-http-trigger-function.azurewebsites.net/api/az204-http-trigger?code={CODE}'
 ```
 
 ### Response
