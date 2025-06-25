@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "98df1c1a-53ee-42e6-8044-ad90cf015211",
+		"name": "Azure Function",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1347256"
+	},
+	"item": [
+		{
+			"name": "httpTrigger",
+			"item": [
+				{
+					"name": "httpTriggerWithName",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Pedro\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{NODEJS_HTTPTRIGGER_BASE_URL}}/api/az204-http-trigger?code={{CODE}}",
+							"host": [
+								"{{NODEJS_HTTPTRIGGER_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"az204-http-trigger"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "{{CODE}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "httpTriggerWithoutName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{NODEJS_HTTPTRIGGER_BASE_URL}}/api/az204-http-trigger?code={{CODE}}",
+							"host": [
+								"{{NODEJS_HTTPTRIGGER_BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"az204-http-trigger"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "{{CODE}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
