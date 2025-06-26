@@ -14,6 +14,14 @@
       "type": "http",
       "direction": "out",
       "name": "res"
+    },
+    {
+      "name": "outputBlob",
+      "direction": "out",
+      "type": "blob",
+      "path": "outcontaineraz204/{rand-guid}",
+      "methods": [],
+      "connection": "az204storage2025_STORAGE"
     }
   ]
 }
